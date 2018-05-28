@@ -64,6 +64,7 @@ nav li{
   display: inline-block;
   margin-left: 60px;
   margin-bottom: -19px;
+  padding: 10px 0 10px 0;
 }
 
 .first{
@@ -96,113 +97,106 @@ nav a{
 
 nav a:hover{
   transition: .7s;
-  color: yellow;
+  color: lightgreen;
 }
 
 
-
-.price{
-  float: left;
-  padding-top: 20px;
-  font-size: 22px !important;
-  font-style: italic;
-  font-weight: 600;
-  border-bottom: 1px solid #4f4f4f;
-}
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+
+.banner .bannerimg{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      transition: all ease-in-out 300ms;
+      -webkit-transition: all ease-in-out 300ms;
+      -moz-transition: all ease-in-out 300ms;
+      -o-transition: all ease-in-out 300ms;
 }
 
-/* Hide the images by default */
-.mySlides {
-    display: none;
+.banner #bannerimg3{
+      background-image: url(media/bannerimg3.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+.banner #bannerimg2{
+      background-image: url(media/bannerimg2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.banner #bannerimg1{
+      background-image: url(media/bannerimg1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.banner #bannerimg4{
+      background-image: url(media/banner-indmeldelse.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.banner #bannerimg5{
+      background-image: url(media/banner-priser.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+
+
+.bannerbutton{
+      width: 40px;
+      height: 40px;
+      background-color: #000;
+      border-radius: 4px;
+      position: absolute;
+      top: 290px;
+      z-index: 100;
+      opacity: 0.8;
+      cursor: pointer;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: block;
-  transition: background-color 0.6s ease;
+.bannerbutton:hover{
+      opacity: 0.9;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.bannerbuttonl{
+      left: 22px;
+      background-image: url(media/left-arrow.png);
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.bannerbuttonr{
+      right: 22px;
+      background-image: url(media/right-arrow.png);
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.banner .banimg-tekst p{
+      color: #A6E48C;
+      font-size: 36px;
+      padding-top: 12px;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.banimg-tekst{
+      padding-top: 400px;
+      padding-left: 202px;
+      text-shadow: 0px 4px 16px #000;
 }
+
 
 footer{
   padding-top: 30px;
